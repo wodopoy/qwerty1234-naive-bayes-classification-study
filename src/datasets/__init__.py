@@ -1,3 +1,10 @@
-from .sms_spam_collection import _load as load_sms_spam_collection
+from .adult import AdultDataset, _load as load_adult
+from .base import BaseDataset
 
-__all__ = ["load_sms_spam_collection"]
+from .sms_spam_collection import SmsSpamCollectionDataset, _load as load_sms_spam_collection
+
+__all__ = [
+    "BaseDataset",
+    "SmsSpamCollectionDataset",
+    "load_sms_spam_collection",
+]
